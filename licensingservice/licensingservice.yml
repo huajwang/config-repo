@@ -1,4 +1,4 @@
-example.property: "I AM IN THE DEFAULT root level"
+example.property: "I AM IN THE DEFAULT sub folder - default "
 
 spring:
   datasource:
