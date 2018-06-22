@@ -8,3 +8,10 @@ spring:
     password: "Gold1Silver2"
   jpa:
     database-platform: "org.hibernate.dialect.MySQLDialect"
+    
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-uri: http://localhost:8901/oauth/token_key    
+
