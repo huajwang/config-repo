@@ -1,0 +1,18 @@
+server:
+  port: 8282
+
+spring:
+  datasource:
+    driver-class-name: "com.mysql.jdbc.Driver"
+    url: "jdbc:mysql://localhost:3306/db-demo"
+    username: "root"
+    password: "Gold1Silver2"
+  jpa:
+    database-platform: "org.hibernate.dialect.MySQLDialect"
+    
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-uri: http://localhost:8901/oauth/token_key    
+
