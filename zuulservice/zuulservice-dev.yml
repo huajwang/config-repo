@@ -1,0 +1,28 @@
+zuul.ignored-services: "*"
+zuul.prefix:  /api
+zuul.routes.organizationservice: /organization/**
+zuul.routes.licensingservice: /licensing/**
+zuul.routes.address: /address/**
+zuul.routes.authenticationservice: /auth/**
+#zuul.routes.licensestatic.path: /licensestatic/**
+#zuul.routes.licensestatic.url:  http://licenseservice-static:8081
+#zuul.routes.licensestatic.serviceId: licensestatic
+#zuul.routes.licensestatic.ribbon.listOfServers: http://licenseservice-static1:8081, http://licenseservice-static2:8082
+#ribbon.eureka.enabled: false
+zuul.sensitiveHeaders: Cookie,Set-Cookie
+zuul.debug.request: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
+#hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 2
+#licensingservice.ribbon.ReadTimeout: 2
+signing.key: "345345fsdfsf5345"
+
+security.oauth2.client.client-id=233668646673605
+security.oauth2.client.client-secret=33b17e044ee6a4fa383f46ec6e28ea1d
+security.oauth2.client.access-token-uri=https://graph.facebook.com/oauth/access_token
+security.oauth2.client.user-authorization-uri=https://www.facebook.com/dialog/oauth
+security.oauth2.client.tokenName=oauth_token
+security.oauth2.client.authentication-scheme=query
+security.oauth2.client.client-authentication-scheme=form
+ 
+security.oauth2.resource.user-info-uri=https://graph.facebook.com/me
+ 
