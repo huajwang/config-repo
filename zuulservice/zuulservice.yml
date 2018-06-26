@@ -25,7 +25,8 @@ security:
       client-id: webapp
       client-secret: abcd1234
       scope: user:profile:read user:profile:write
-      use-current-uri: true
+      pre-established-redirect-uri: http://localhost:8901/auth/login
+      use-current-uri: false
       client-authentication-scheme: header
     resource:
       jwt:
