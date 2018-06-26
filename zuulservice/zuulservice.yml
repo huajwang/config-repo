@@ -24,7 +24,7 @@ security:
       client-id: webapp
       client-secret: abcd1234
       scope: user:profile:read user:profile:write
-      pre-established-redirect-uri: http://localhost:8686/callback
+      pre-established-redirect-uri: http://localhost:8787/callback
       use-current-uri: false
       client-authentication-scheme: header
     resource:
