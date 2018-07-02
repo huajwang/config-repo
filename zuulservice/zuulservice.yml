@@ -20,8 +20,8 @@ signing.key: "345345fsdfsf5345"
 security:
   oauth2:
     client:
-      access-token-uri: http://localhost:8901/auth/oauth/token
-      user-authorization-uri: http://localhost:8901/auth/oauth/authorize
+      access-token-uri: http://localhost:8901/oauth/token
+      user-authorization-uri: http://localhost:8901/oauth/authorize
       client-id: webapp
       client-secret: abcd1234
       scope: user:profile:read user:profile:write
