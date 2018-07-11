@@ -9,3 +9,5 @@ spring:
     password: "Gold1Silver2"
   jpa:
     database-platform: "org.hibernate.dialect.MySQLDialect"
+    hibernate:
+      ddl-auto: none
