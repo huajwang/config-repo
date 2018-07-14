@@ -12,3 +12,9 @@ spring:
     database-platform: "org.hibernate.dialect.MySQL5Dialect"
     hibernate:
       ddl-auto: none
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-uri: http://localhost:9999/uaa/oauth/token_key  
