@@ -7,4 +7,4 @@ spring:
     username: "root"
     password: "Gold1Silver2"
   jpa:
-    database-platform: "org.hibernate.dialect.MySQLDialect"
+    database-platform: "org.hibernate.dialect.MySQL5Dialect"
