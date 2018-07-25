@@ -1,0 +1,13 @@
+server:
+  servlet:
+    context-path: /uaa
+  port: 9999
+  
+spring:
+  datasource:
+    driver-class-name: "com.mysql.jdbc.Driver"
+    url: "jdbc:mysql://192.168.2.11:3306/db-demo"
+    username: "root"
+    password: "Gold1Silver2"
+  jpa:
+    database-platform: "org.hibernate.dialect.MySQL5Dialect"
