@@ -8,3 +8,7 @@ spring:
     password: "Gold1Silver2"
   jpa:
     database-platform: "org.hibernate.dialect.MySQL5Dialect"
+
+redis:
+  server: "redis"
+  port: "6379"
