@@ -9,3 +9,9 @@ spring:
     console:
       enabled: true
 
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-uri: http://localhost:9999/uaa/oauth/token_key
+
