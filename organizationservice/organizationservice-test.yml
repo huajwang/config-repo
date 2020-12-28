@@ -5,5 +5,11 @@ spring:
     username: "root"
     password: "Gold1Silver2"
   jpa:
-    database-platform: "org.hibernate.dialect.MySQL5Dialect"
+    database-platform: "org.hibernate.dialect.MySQLDialect"
   platform: mysql
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-uri: http://localhost:9999/uaa/oauth/token_key
