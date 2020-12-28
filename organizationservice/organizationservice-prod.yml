@@ -1,19 +1,13 @@
-example.property: "I AM IN THE DEFAULT sub folder - default "
-
 spring:
   datasource:
     driver-class-name: "com.mysql.jdbc.Driver"
-    url: "jdbc:mysql://localhost:3306/micro-license"
+    url: "jdbc:mysql://db-mysql:3306/emall"
     username: "root"
     password: "Gold1Silver2"
   jpa:
     database-platform: "org.hibernate.dialect.MySQLDialect"
-    
 security:
   oauth2:
     resource:
       jwt:
-        key-uri: http://localhost:9999/uaa/oauth/token_key
-redis:
-  server: "redis"
-  port: "6379"
+        key-uri: http://authenticationservice:9999/uaa/oauth/token_key

@@ -3,7 +3,7 @@ example.property: "I AM IN THE DEFAULT at sub folder -- prod yml"
 spring:
   datasource:
     driver-class-name: "com.mysql.jdbc.Driver"
-    url: "jdbc:mysql://database:3306/emall"
+    url: "jdbc:mysql://db-mysql:3306/emall"
     username: "root"
     password: "Gold1Silver2"
   jpa:
