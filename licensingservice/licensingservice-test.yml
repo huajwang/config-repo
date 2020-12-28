@@ -2,13 +2,13 @@ example.property: "I AM IN THE DEFAULT sub folder - test "
 
 spring:
   datasource:
-    driver-class-name: "com.mysql.jdbc.Driver"
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
     url: "jdbc:mysql://db-mysql:3306/db-demo"
     username: "root"
     password: "Gold1Silver2"
+    platform: mysql
   jpa:
     database-platform: "org.hibernate.dialect.MySQLDialect"
-  platform: mysql
     
 security:
   oauth2:
