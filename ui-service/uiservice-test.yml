@@ -9,4 +9,4 @@ security:
       clientSecret: abcd1234
     resource:
       jwt:
-        key-uri: http://authenticationservice/uaa/oauth/token_key	
+        key-uri: http://authenticationservice:9999/uaa/oauth/token_key	
