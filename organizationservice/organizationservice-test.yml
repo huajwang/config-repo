@@ -5,6 +5,7 @@ spring:
     username: "root"
     password: "Gold1Silver2"
     platform: mysql
+    initialization-mode: always
   jpa:
     database-platform: "org.hibernate.dialect.MySQLDialect"
 
