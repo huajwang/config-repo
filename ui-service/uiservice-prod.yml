@@ -1,12 +1,12 @@
 security:
   oauth2:
     client:
-      accessTokenUri: http://authenticationservice:9999/uaa/oauth/token
-      userAuthorizationUri: http://authenticationservice:9999/uaa/oauth/authorize
+      accessTokenUri: http://authenticationservice:${AUTHSERVER_PORT}/uaa/oauth/token
+      userAuthorizationUri: http://${DOMAIN_NAME:localhost}:${AUTHSERVER_PORT}/uaa/oauth/authorize
       scope:
         user:profile:read user:profile:write
       clientId: webapp
-      clientSecret: abcd1234
+      clientSecret: ${CLIENT_SECRET}
     resource:
       jwt:
-        key-uri: http://authenticationservice/uaa/oauth/token_key	
+        key-uri: http://authenticationservice:${AUTHSERVER_PORT}/uaa/oauth/token_key
