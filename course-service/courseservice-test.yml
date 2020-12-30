@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: "com.mysql.jdbc.Driver"
+    url: "jdbc:mysql://db-mysql:3306/db-demo?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC"
+    username: "root"
+    password: "Gold1Silver2"
+    platform: mysql
+    initialization-mode: always
+  jpa:
+    database-platform: "org.hibernate.dialect.MySQLDialect"
+    show-sql: true
+    hibernate:
+      ddl-auto: none

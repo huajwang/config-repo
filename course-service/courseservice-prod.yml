@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: "com.mysql.jdbc.Driver"
+    url: "jdbc:mysql://db-mysql:3306/emall?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC"
+    username: "root"
+    password: "Gold1Silver2"
+  jpa:
+    database-platform: "org.hibernate.dialect.MySQL5Dialect"
+    hibernate:
+      ddl-auto: none
