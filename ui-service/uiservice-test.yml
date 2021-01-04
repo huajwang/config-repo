@@ -1,12 +1,15 @@
 security:
   oauth2:
     client:
-      accessTokenUri: http://authenticationservice:9999/uaa/oauth/token
-      userAuthorizationUri: http://${DOMAIN_NAME:localhost}:9999/uaa/oauth/authorize
-      scope:
-        user:profile:read user:profile:write
-      clientId: webapp
-      clientSecret: abcd1234
+      registration:
+        facebook:
+          accessTokenUri: https://graph.facebook.com/oauth/access_token
+          userAuthorizationUri: https://www.facebook.com/dialog/oauth
+          tokenName: oauth_token
+          clientId: ${FACEBOOK_APP_ID}
+          clientSecret: ${FACEBOOK_APP_SECRET}
+          authenticationScheme: query
+          clientAuthenticationScheme: form
     resource:
-      jwt:
-        key-uri: http://authenticationservice:9999/uaa/oauth/token_key	
+      userInfoUri: https://graph.facebook.com/me
+
